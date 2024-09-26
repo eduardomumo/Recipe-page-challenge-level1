@@ -1,0 +1,158 @@
+:root {
+    --eggshell: #F3E5D7;
+    --dark-charcoal: #312E2C;
+    --dark-raspberry: #7A284E;
+    --snow: #FFF7FB;
+    --white-coffee: #E3DDD7;
+    --brandy-red: #854632;
+    --wenge-brown: #5F564D;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--eggshell);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: var(--wenge-brown);
+}
+
+/* header style */
+header{
+    background: white;
+    max-width: 600px;
+    padding: 25px 25px 0px 25px;
+    border-radius: 10px 10px 0 0;
+}
+
+.img-header{
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1{
+    color: var(--dark-charcoal);
+}
+
+
+main{
+    background: white;
+    max-width: 600px;
+    padding: 0px 25px 25px 25px;
+    border-radius: 0 0 10px 10px;
+}
+
+
+/* preparation time class style */
+
+h3{
+    color: var(--dark-raspberry);
+}
+
+.section-preparation-time{
+    background: var(--snow);
+    padding: 10px 0px 10px 20px;
+    border-radius: 14px;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+li{
+    padding-left: 14px;
+    margin-bottom: 12px;
+}
+
+ul li::marker{
+    color: var(--dark-raspberry);
+    font-size: 12px;    
+}
+
+/* ingrtedients style */
+h2{
+    color: var(--brandy-red);
+}
+
+.border{
+    border-bottom:solid 1px var(--white-coffee);
+    max-width: 600px;
+    padding-top: 10px;
+}
+
+/* instructions style */
+
+.section-instruction{
+    line-height: 24px;
+}
+
+ol{
+    padding-left: 18px;
+}
+
+ol li::marker{
+    font-weight: bold;
+    color: var(--brandy-red);
+}
+
+
+/* table style */
+
+.table-nutrition{
+    width: 100%;
+    border-collapse:collapse;
+}
+
+.table-macro{
+    border-bottom: solid 1px var(--white-coffee);
+    padding: 10px 0 10px 30px;
+}
+
+.table-calories{
+    border-bottom: solid 1px var(--white-coffee);
+    font-weight: bold;
+    color: var(--brandy-red);
+    padding: 10px 30px 10px 0px;}
+
+.table-macro-not-border{
+    border-bottom: none;
+    padding: 10px 0 10px 30px;
+}
+
+
+.table-calories-not-border{
+    border-bottom: none;
+    font-weight: bold;
+    color: var(--brandy-red);
+    padding: 10px 30px 10px 0px;
+}
+
+
+@media only screen and (max-width: 480px){
+    body{
+        padding: 0;
+        background: white;
+    }
+
+    header{
+        padding: 0;
+        width: 100%;
+    }
+
+    main{
+        width: 100%;
+        max-width: 375px;
+    }
+
+    .section-preparation-time{
+        overflow: scroll;
+    }
+
+}
